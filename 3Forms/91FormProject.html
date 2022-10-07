@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Register Form</title>
+    <style>
+        body{
+            background-color: #f2f6ff;
+            margin: 0;
+            padding: 16px;
+    
+        }
+        .social-icon{
+            width: 50px;
+            height: 50px;
+             padding-top: 16px;
+             padding-bottom: 16px;
+             padding-left: 32px;
+             padding-right: 32px;
+
+        }
+        form{
+            background-color: white;
+            width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+        #form-heading{
+            font-size: 32px;
+            padding-top: 56px;
+            padding-bottom: 32px;
+        }
+        #social-wrapper{
+         background-color: #f2f6ff;
+            padding: 24px;
+        }
+        #input-wrapper{
+            padding-top: 80px;
+            padding-bottom: 40px;
+            padding-left: 80px;
+            padding-right: 80px;
+
+        }
+        .input-box{
+            font-size: 18px;
+            padding-bottom: 12px;
+            margin-bottom: 36px;
+            border:0;
+            border-bottom: 1px solid #ccc;
+            width: 100%;
+        }
+        #btn-submit{
+            background-color: #0056ff;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-right: 24px;
+            padding-left: 24px;
+            font-size: 18px;
+            color: white;
+            border: none;
+
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1 id="form-heading">Register:</h1>
+        <div id="social-wrapper">
+            <img class="social-icon" src="http://pluspng.com/img-png/google-logo-png-open-2000.png" alt="google icon"/>
+
+        <img class="social-icon" src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/facebook_circle-512.png" alt="fb icon"/>
+
+        <img class="social-icon" src="data:image/png;base64,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" alt="Github icon"/>
+
+        <img class="social-icon" src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/linkedin_circle-512.png" alt="linkedin icon"/>
+        </div>
+<div id="input-wrapper">
+    <div>
+    <input class="input-box" type="text" name="username" placeholder="username">
+    
+
+</div>
+<div>
+    <input class="input-box" type="email" name="email" placeholder="email">
+    
+</div>
+<div>
+    <input class="input-box" type="password" name="password" placeholder="password">
+</div>
+<div>
+    <input class="input-box" type="password" name="confirm-password" placeholder="confirm password">
+</div>
+<input id="btn-submit" type="submit" value="Register">
+</div>
+    </form>
+</body>
+</html>
